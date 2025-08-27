@@ -114,6 +114,10 @@ streamlit run app.py
 ```
 
 The UI will connect to `http://localhost:8000` by default (override with `API_BASE_URL` env var).
+<img width="1437" height="805" alt="Screenshot 2025-08-26 at 8 03 31 PM" src="https://github.com/user-attachments/assets/a5c9374a-0259-4d26-bc7e-457e3d0232b6" />
+
+<img width="1437" height="805" alt="Screenshot 2025-08-26 at 8 03 44 PM" src="https://github.com/user-attachments/assets/dbe66e10-35fd-46e4-87af-ed1fd8f5ad64" />
+
 
 ---
 
@@ -126,16 +130,4 @@ The UI will connect to `http://localhost:8000` by default (override with `API_BA
    - Line/area charts with legends
    - Campaign performance leaderboard
 
----
 
-## 🛠️ Notes
-
-- Database schema is minimal — you can adapt to BigQuery, Postgres, or SQLite.
-- Streamlit app is deliberately simple, no extra CORS/static hosting.
-- Replace test data with your ETL output to go live.
-
----
-
-## 📜 License
-
-MIT — free to use, modify, and adapt.
