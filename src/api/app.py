@@ -4,12 +4,14 @@ from pydantic import BaseModel
 from typing import Optional, Literal
 from .dal import get_conn, summary as q_summary, timeseries as q_timeseries, top_campaigns as q_top_campaigns
 from .dal import bounds as q_bounds   # <--- add this import
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(title="Ads Metrics API", version="1.0.0")
 
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
 
 class SummaryResponse(BaseModel):
     start: str
